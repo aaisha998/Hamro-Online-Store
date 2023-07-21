@@ -1,0 +1,83 @@
+// @import "../../variable.scss";
+.nav-seciton {
+  .mg-nav-40 {
+    margin-bottom: 48px;
+  }
+  .icon-gap {
+    margin-left: 10px;
+  }
+  .dropdown-btn {
+    position: relative;
+    gap: 10px;
+
+    .menu-dropdown {
+      position: absolute;
+      top: 44px;
+      .dropdown-item {
+        background-color: black;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 4px 24px;
+        text-transform: capitalize;
+      }
+      .dropdown-item:hover {
+        background-color: red;
+        color: white;
+      }
+    }
+  }
+
+  .no-dropdown {
+    display: none;
+  }
+  .nav-wrapper {
+    display: flex;
+    z-index: 10;
+    height: 48px;
+    position: fixed;
+    top: 0;
+    background: black;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+      rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    width: 100%;
+    align-items: center;
+    .logo-section {
+      margin-left: 10%;
+    }
+    .text {
+      color: white;
+    }
+    .list-wrapper {
+      z-index: 10;
+      position: fixed;
+      right: 10%;
+      display: flex;
+      width: auto;
+      transition: 0.5s;
+    }
+
+    .nav-text {
+      padding: 8px 8px 8px 24px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181 !important;
+      display: block;
+      text-align: left;
+      transition: 0.3s;
+      display: flex;
+      gap: 10px;
+      p {
+        margin: 0;
+      }
+    }
+    .nav-content {
+      color: white;
+      font-size: 18px;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .nav-content {
+    display: none;
+  }
+}
