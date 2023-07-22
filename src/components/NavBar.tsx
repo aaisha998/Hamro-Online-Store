@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "./NavBar.scss";
 
 export const NavBar = () => {
@@ -20,7 +19,7 @@ export const NavBar = () => {
               <a href="/">Home</a>
             </li>
             <li>
-              <Link to="/search">Search</Link>
+              <a href="/search">Search</a>
             </li>
           </ul>
         </div>

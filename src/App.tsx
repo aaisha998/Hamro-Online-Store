@@ -13,29 +13,18 @@ function App() {
     <div className="App">
       <QueryClientProvider client={queryClient}>
         <NavBar />
-        <Router> 
-          <Routes> 
+        <Router>
+          <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/search" element={<SearchPage />}></Route>
-          <Route path="/product-detail/:id" element={<ProductPage />}></Route>
+            <Route path="/product-detail/:id" element={<ProductPage />}></Route>
             <Route path="*" element="Error" />
           </Routes>
         </Router>
       </QueryClientProvider>
     </div>
   );
-  
 }
 
 export default App;
 
-// {<QueryClientProvider client={queryClient}>
-//         {/* <ReactQueryDevtools /> */}
-//         <NavBar />
-
-//         <Routes>
-//           {/* <Route path="/" element={<HomePage />}></Route> */}
-
-//           <Route path="*" element={"Error"}></Route>
-//         </Routes>
-//       </QueryClientProvider>}
