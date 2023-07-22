@@ -1,10 +1,6 @@
-import { useState } from "react";
 import "./NavBar.scss";
-import { useAllCategories } from "./GetApi";
 
 export const NavBar = () => {
-  const [show, setShow] = useState(false);
-  const { data: categoryList } = useAllCategories();
   return (
     <>
       <header className="header-section">
