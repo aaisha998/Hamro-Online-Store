@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&family=Work+Sans:wght@100;300;400;500;600;700&display=swap");
+.App {
+  text-align: center;
+  background: #ececec;
+  font-family: "Work Sans", sans-serif;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* // css continue */
+.main-btn {
+  color: white;
+  background: #703e97;
+  text-transform: uppercase;
+  outline: none;
+  border: 1px solid #703e97;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(255, 242, 242, 0.05);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  padding: 12px 24px;
+  border-radius: 4px;
+}
+.title {
+  font-size: 32px;
+  font-weight: 500;
+  color: #303030;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+.card-btn {
+  background-color: #703e97;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.produt-section {
+  width: 100%;
+  .category-content {
+    font-weight: 600;
+    color: #703e97;
+    cursor: pointer;
+    text-transform: capitalize;
+  }
+  .produt-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(255, 242, 242, 0.05);
+    display: flex;
+    .product-title {
+      text-align: left;
+      font-size: 24px;
+      line-height: unset;
+      letter-spacing: 0;
+      margin-bottom: 0.5rem;
+      text-transform: capitalize;
+    }
+    .price {
+      margin-top: 10px;
+      font-size: 24px;
+      font-weight: 600;
+    }
+    .product-description {
+      padding: 20px 0;
+      margin: 20px 0;
+      border-top: 1px solid hsla(0, 0%, 64.7%, 0.15);
+      border-bottom: 1px solid hsla(0, 0%, 64.7%, 0.15);
+    }
+  }
+}
+.title-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0 30px;
+
+  .border-div {
+    border: 1px solid #703e97;
+    width: 100px;
+  }
+}
+.product-section:hover {
+  .product-title {
+    color: #703e97;
+  }
+}
+.product-section {
+  margin-bottom: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  height: 380px;
+  position: relative;
+  .product-discription {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    width: 100%;
+  }
+}
+.product-title {
+  font-size: 16px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  color: #404040;
+}
+
+.price-cart-btn-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.price {
+  letter-spacing: 1px;
+  border: 1px solid rgba(180, 3, 29, 0.2);
+  height: 40px;
+  border-radius: 5px;
+  width: 100%;
+  padding: 0 10px;
+  color: #703e97;
+  background: rgba(180, 3, 29, 0.05);
+  line-height: 36px;
+}
+
+.product-img {
+  object-fit: contain;
+  width: 200px;
+  max-height: 240px;
+}
+
+.product-grid {
+  height: 200px;
+}
+.product-detail-wrapper {
+  padding: 10px;
+}
+.section-gap {
+  margin-top: 48px;
+}
+.search-content {
+  width: 70%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  .title {
+    color: white;
+  }
+}
+.search-field {
+  position: relative;
+  padding: 8px 24px;
+  border: none;
+  border-radius: 25px;
+  width: 100%;
+}
+.mg-top-40 {
+  margin-top: 48px;
+}
+.search-btn {
+  background: #87095d;
+  padding: 7px 14px;
+  color: #fff;
+  border: none;
+  position: absolute;
+  right: 0%;
+  bottom: 0px;
+  border-radius: 25px;
+}
+.bold-content {
+  font-size: 16px;
+  color: black;
+  font-weight: 500;
+}
+.content {
+  font-size: 14px;
+  color: #404040;
+  font-weight: 400;
+}
+.banner-page {
+  .content {
+    color: white;
+  }
+}
+@media (max-width: 480px) {
+  .product-title {
+    text-align: center !important;
+  }
+  .bold-content {
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+  }
+  .banner-page {
+    .content {
+      color: white;
+    }
+  }
+  .content {
+    font-size: 14px;
+    color: #404040;
+    font-weight: 400;
+  }
+
+  .logo-section {
+    margin-left: 10px !important;
+  }
+  .product-img {
+    width: 200px;
+  }
+}
